@@ -11,8 +11,8 @@ for(let i = 1; i < limit; i++){
 
 function additionPatternSum(start, diff, limit){
     let sum = start;
-    for(let i=start; i <=limit; i++;){
-    sum=sum i*diff;
+    for(let i=0; i <=limit; i++){
+    sum=sum+i*diff;
     }
     return sum;
 }
@@ -23,10 +23,11 @@ function additionPatternSum(start, diff, limit){
 // While-loop function
 
 function multiplicationPatternSum(start, factor, max){
-    sum = start
-while(factor<=max){
-
-
+    sum = start;
+    let k = start;
+    while(k<=max){
+    sum=sum+factor*k;
+    k=factor*k;
 }
 
 }
@@ -36,6 +37,7 @@ while(factor<=max){
 
 
 //Later copy paste the checking code below here.
+//Declarion of checking code
 function check(){
     let smallLimit = 208;
     let mediumLimit = 1024;
@@ -52,5 +54,13 @@ function check(){
     console.log(`The function positiveIntSum works properly: ${test1 && test2}`);
     console.log(`The function additionPatternSum works properly: ${test3 && test4}`);
     console.log(`The function positiveIntSum works properly: ${test5 && test6 && test7}`);
-
+    console.log(`-------------------------------------------------------------`);
+    console.log(`
+    Common mistakes to check
+    1. Did you spell everything correctly?
+    2. Does it actually return an answer?
+    3. Were your original notes correct?
+    `);
 }
+//Actually running the checking code.
+check();
