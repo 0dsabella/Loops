@@ -25,9 +25,10 @@ function additionPatternSum(start, diff, limit){
 function multiplicationPatternSum(start, factor, max){
     sum = start;
     let k = start;
-    while(k<=max){
+while(k<=max){
     sum=sum+factor*k;
     k=factor*k;
+    return sum 
 }
 
 }
